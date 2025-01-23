@@ -1,0 +1,413 @@
+font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
+th{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(242, 226, 9);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main Section (Intro) */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Travel Images Section */
+.travel-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.travel-images img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Destinations */
+.destinations {
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.destination-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destination {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.destination img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.destination h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .travel-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-gallery {
+        flex-direction: column;
+    }
+
+    .destination {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Sign-Up Sheet Styles */
+.signup-section {
+    text-align: center;
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.signup-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-form label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 100%;
+}
+
+.signup-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.signup-form button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #45a049;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide - Trips</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fef1e4;
+            color: #4e4b4b;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fdffb6;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f8f9da;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .trips-intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .trips-intro h1 {
+            font-size: 36px;
+            color: #fdffb6;
+        }
+
+        .trips-intro p {
+            font-size: 18px;
+            color: #4e4b4b;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #f2f2f2;
+        }
+
+        th {
+            background-color: #fdffb6;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        td {
+            background-color: #fff;
+            font-size: 16px;
+            color: #4e4b4b;
+            border-radius: 8px;
+        }
+
+        td img {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        td img:hover {
+            transform: scale(1.1);
+        }
+
+        .trip-images img {
+            margin: 5px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .trip-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .trip td {
+            vertical-align: top;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fdffb6;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section with Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="signup.html">Sign-Up Sheet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Trips Introduction Section -->
+        <section class="trips-intro">
+            <h1>Explore My Travel Adventures</h1>
+            <p>Join me as I explore the world! Here are some of the incredible destinations I've had the pleasure of visiting:</p>
+        </section>
+
+        <!-- Trips Table Section -->
+        <section class="trips">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Images</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Punta Cana, Dominican Republic -->
+                    <tr class="trip">
+                        <td><strong>Punta Cana, Dominican Republic</strong></td>
+                        <td><img src="Dominican Republic 2024.png" alt="Punta Cana" width="300" height="200"></td>
+                        <td>A tropical paradise with stunning beaches, resorts, and crystal-clear waters. The perfect destination for relaxation and adventure!</td>
+                    </tr>
+
+                    <!-- Barcelona, Spain -->
+                    <tr class="trip">
+                        <td><strong>Barcelona, Spain</strong></td>
+                        <td><img src="sagradafamilia2.png" alt="Sagrada Familia in Barcelona" width="300" height="200"></td>
+                        <td>Known for its incredible architecture, vibrant culture, and delicious food, Barcelona is a must-visit European destination.</td>
+                    </tr>
+
+                    <!-- Bucerias, Mexico -->
+                    <tr class="trip">
+                        <td><strong>Bucerias, Mexico</strong></td>
+                        <td><img src="Mexico.jpg" alt="Bucerias Beach" width="300" height="200"></td>
+                        <td>A charming coastal village in Mexico known for its sandy beaches, authentic Mexican culture, and warm hospitality.</td>
+                    </tr>
+
+                    <!-- Florida, USA -->
+                    <tr class="trip">
+                        <td><strong>Florida, USA</strong></td>
+                        <td><img src="Disney2022.jpg" alt="Florida Disney World" width="300" height="200"></td>
+                        <td>Home to world-famous theme parks, sunny beaches, and vibrant nightlife. Florida offers something for everyone!</td>
+                    </tr>
+
+                    <!-- Niagara Falls, Canada -->
+                    <tr class="trip">
+                        <td><strong>Niagara Falls, Canada</strong></td>
+                        <td>
+                            <div class="trip-images">
+                                <img src="NiagaraFalls.jpg" alt="Niagara Falls" width="300" height="200"><br>
+                                <img src="IMG_1626.JPG" alt="Niagara Falls View 1" width="300" height="200"><br>
+                                <img src="IMG_1627.JPG" alt="Niagara Falls View 2" width="300" height="200"><br>
+                                <img src="20170624_150528.jpg" alt="Niagara Falls View 3" width="300" height="200">
+                            </div>
+                        </td>
+                        <td>Experience the awe-inspiring beauty of one of the world's most famous natural wonders, Niagara Falls, a must-see destination in Canada.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Travel Adventures - All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
+
+
